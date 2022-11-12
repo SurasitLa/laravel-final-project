@@ -1,4 +1,4 @@
-@extends('grades.layout')
+@extends('grade\layout')
 @section('content')
     <div class="container">
         <div class="row">
@@ -10,6 +10,9 @@
                     <div class="card-body">
                         <a href="{{ url('/grade/create') }}" class="btn btn-success btn-sm" title="Add New Grade">
                             <i class="fa fa-plus" aria-hidden="true"></i> Add Grade
+                        </a>
+                        <a href="{{ url('/student') }}" class="btn btn-success btn-sm" title="Student Details">
+                            <i class="fa fa-plus" aria-hidden="true"></i> Student
                         </a>
                         <br/>
                         <br/>

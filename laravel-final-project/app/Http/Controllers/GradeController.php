@@ -9,12 +9,12 @@ class GradeController extends Controller
     public function index()
     {
         $grades = Grade::all();
-        return view ('grades.index')->with('grades', $grades);
+        return view ('grade\index')->with('grades', $grades);
     }
     
     public function create()
     {
-        return view('grades.create');
+        return view('grade\create');
     }
   
     public function store(Request $request)
@@ -33,7 +33,7 @@ class GradeController extends Controller
     public function edit($id)
     {
         $grade = Grade::find($id);
-        return view('grades.edit')->with('grades', $grade);
+        return view('grade\edit')->with('grades', $grade);
     }
   
     public function update(Request $request, $id)

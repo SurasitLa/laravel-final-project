@@ -1,4 +1,4 @@
-@extends('grades.layout')
+@extends('grade\layout')
 @section('content')
 <div class="card">
   <div class="card-header">Grade Page</div>
