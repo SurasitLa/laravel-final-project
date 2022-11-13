@@ -1,7 +1,7 @@
 @extends('students.layout')
 @section('content')
 <div class="card">
-  <div class="card-header">Contactus Page</div>
+  <div class="card-header">Edit Details Page</div>
   <div class="card-body">
       
       <form action="{{ url('student/' .$students->id) }}" method="post">
